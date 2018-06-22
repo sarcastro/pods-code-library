@@ -21,7 +21,7 @@ Keep in mind that when using pre_save filters, in order for any saving to happen
 
 
 ## `$pieces[ 'fields' ]`
-The first index of the array is 'fields' and it contains the field values being saved. The value to be saved is contained in the index 'value' of the index name for the field. So for example, if your Pod has a field called 'how_extreme', you cna access the value to be saved using `$pieces[ 'fields' ][ 'how_awesome' ][ 'value' ]`. When using a pre_save filter, you can change the value of the field by setting it equal to something. For example, `$pieces[ 'fields' ][ 'how_awesome' ][ 'value' ] = 'Unbelievably awesome.'`.
+The first index of the array is 'fields' and it contains the field values being saved. The value to be saved is contained in the index 'value' of the index name for the field. So for example, if your Pod has a field called 'how_awesome', you can access the value to be saved using `$pieces[ 'fields' ][ 'how_awesome' ][ 'value' ]`. When using a pre_save filter, you can change the value of the field by setting it equal to something. For example, `$pieces[ 'fields' ][ 'how_awesome' ][ 'value' ] = 'Unbelievably awesome.'`.
 
 
 If saving via the WordPress editor, all fields in the Pod will be contained in this array. If saving via the Pods API, then only the specific fields being saved will be in this array. Fields can be added to the array of fields being used, via the `active_fields` index discussed below.
